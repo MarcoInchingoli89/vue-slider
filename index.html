@@ -27,10 +27,11 @@
                 <div class="thumbs">
                     <div class="prev" @click="prevSlide"></div>
                     <div class="next" @click="nextSlide"></div>
-                    <div class="thumb active">
-                        <img :src="slides[0].image" alt="Spiderman" />
-                    </div>
-                    <div class="thumb">
+                <div class="thumb">
+                    <img :class=" activeSlide === i ? 'active' : '' " :src="slides[i].image" alt="" v-for="(thumb, i) in slides">
+                </div>
+                    
+                    <!-- <div class="thumb">
                         <img :src="slides[1].image" alt="Ratchet & Clank" />
                     </div>
                     <div class="thumb">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="thumb">
                         <img :src="slides[4].image" alt="Avengers" />
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

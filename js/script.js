@@ -9,6 +9,7 @@ createApp({
     data() {
         return {
 
+            thumbActive: 0,
             activeSlide: 0,
             slides: [
                 {
