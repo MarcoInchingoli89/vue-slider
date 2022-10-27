@@ -37,11 +37,14 @@
     height: 300px;
     background: #000;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
+    object-fit: cover;
 }
 
 .thumb img {
